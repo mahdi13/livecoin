@@ -3,9 +3,9 @@
 pragma solidity ^0.6.0;
 
 import "../Context.sol";
-import "./IERC20.sol";
+import "../IERC20.sol";
 import "../SafeMath.sol";
-import "../../utils/Address.sol";
+import "../Address.sol";
 
 /**
  * @dev Implementation of the {IERC20} interface.
@@ -35,9 +35,9 @@ contract ERC20 is Context, IERC20 {
     using SafeMath for uint256;
     using Address for address;
 
-    mapping (address => uint256) private _balances;
+    mapping(address => uint256) private _balances;
 
-    mapping (address => mapping (address => uint256)) private _allowances;
+    mapping(address => mapping(address => uint256)) private _allowances;
 
     uint256 private _totalSupply;
 
@@ -303,6 +303,6 @@ contract ERC20 is Context, IERC20 {
      *
      * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
      */
-    function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }
+    function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual {}
 }
 
