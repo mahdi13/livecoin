@@ -1,3 +1,5 @@
+pragma solidity ^0.6.2;
+
 import "./LIVEABLE.sol";
 
 contract LIVE is LIVEABLE {

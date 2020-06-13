@@ -1,6 +1,8 @@
+pragma solidity ^0.6.2;
+
 import "./ERC20Burnable.sol";
 
-contract LIVEABLE is ERC20Burnable {
+abstract contract LIVEABLE is ERC20Burnable {
     uint256 private _executorStaticReward;
     uint256 private _executorPercentileReward;
     uint256 private _lifetime;
